@@ -1,0 +1,46 @@
+{
+  "name": "isomorphic-react-redux",
+  "version": "0.1.0",
+  "description": "Just for testing purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run start-api\" \"npm run start-server\" \"npm run webpack-dev-server\"",
+    "start-api": "NODE_ENV=development babel-node ./bin/api.js",
+    "start-server": "NODE_ENV=development babel-node ./bin/server.js",
+    "webpack-dev-server": "NODE_ENV=development babel-node ./bin/webpack-dev-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fles/isomorphic-react-redux.git"
+  },
+  "author": "Nikola Horvat <nikolahr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fles/isomorphic-react-redux/issues"
+  },
+  "homepage": "https://github.com/Fles/isomorphic-react-redux#readme",
+  "devDependencies": {
+    "eslint": "^3.7.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    "webpack-dev-middleware": "^1.8.3",
+    "webpack-hot-middleware": "^2.12.2"
+  },
+  "dependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "concurrently": "^3.1.0",
+    "express": "^4.14.0",
+    "http-proxy": "^1.15.1",
+    "webpack": "^1.13.2"
+  }
+}
